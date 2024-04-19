@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-image: url(https://static.wikia.nocookie.net/naruto/images/b/b5/Site-background-light/revision/latest/scale-to-width-down/1500?cb=20210918170052); */
+  background-color: #f59f00;
+}
+.hidden {
+  display: none;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #11111157;
+}
+main .container {
+  width: 120rem;
+  margin: 0 auto;
+  padding: 0 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+}
+.img-box {
+  width: 200px;
+  height: 300px;
+  margin-bottom: 1.8rem;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.3s;
+}
+.img-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1.2rem 4rem rgba(0, 0, 0, 0.5);
+}
+.img-1 {
+  background-image: url(https://cdn.staticneo.com/w/naruto/Nprofile2.jpg);
+  background-position: top;
+}
+.img-2 {
+  background-image: url(https://pm1.aminoapps.com/7417/f2af5e6d7747412d43adc255e9d6c7da78e2e902r1-757-757v2_00.jpg);
+}
+.img-3 {
+  background-image: url(https://blacknerdproblems.com/wp-content/uploads/2015/08/Sakura-1.jpg);
+}
+.modal-box-heading {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+  color: #fafafa;
+}
+.description {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 1.8rem;
+  color: #fafafa;
+}
+.modal-btn {
+  border: none;
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.read-more-card {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  line-height: 1.8;
+  background-color: #fafafa;
+  padding: 2rem;
+  z-index: 100;
+}
